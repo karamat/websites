@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Following are the titles of given websites:
+  ul
+    each website in websites
+      li= website.url + ' - ' + '\"' + website.title + '\"'
